@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+
+/* /////////////////////////////////////////////////
+
+	common CSS
+	
+	Author	yk
+	Date	2012/08/23
+
+///////////////////////////////////////////////// */
+
+
+
+/*--------------------------汎用ボーダー設定--------------------------*/
+
+.b_CCC {
+	border:1px solid #CCC;
+}
+
+.b_0F0 {
+	border:1px solid #0F0;
+}
+
+.b_0FF {
+	border:1px solid #0FF;
+}
+
+.bt_solid {
+	border-top:1px solid #CCC;
+}
+
+.bt_dot {
+	border-top:1px dotted #CCC;
+}
+
+.bb_solid {
+	border-bottom:1px solid #CCC;
+}
+
+.bb_dot {
+	border-bottom:1px dotted #CCC;
+}
+
+.bb_dash {
+	border-bottom:1px dashed #CCC;
+}
+
+
+
+/*--------------------------汎用マージン設定--------------------------*/
+
+.m05 {
+	margin:5px;
+}
+
+.m10 {
+	margin:10px;
+}
+
+.m20 {
+	margin:20px;
+}
+
+.mt05 {
+	margin-top:5px;
+}
+
+.mt10 {
+	margin-top:10px;
+}
+
+.mt20 {
+	margin-top:20px;
+}
+
+.mr05{
+	margin-right:5px;
+}
+
+.mr10{
+	margin-right:10px;
+}
+
+.mr20{
+	margin-right:20px;
+}
+
+.mb05 {
+	margin-bottom:5px;
+}
+
+.mb10 {
+	margin-bottom:10px;
+}
+
+.mb20 {
+	margin-bottom:20px;
+}
+
+.ml05{
+	margin-left:5px;
+}
+
+.ml10{
+	margin-left:10px;
+}
+
+.ml20{
+	margin-left:20px;
+}
+
+/*--------------------------汎用パッディング設定--------------------------*/
+
+.p05{
+	padding:5px;
+}
+
+.p10{
+	padding:10px;
+}
+
+.p20{
+	padding:20px;
+}
+
+.pt05{
+	padding-top:5px;
+}
+
+.pt10{
+	padding-top:10px;
+}
+
+.pt20{
+	padding-top:20px;
+}
+
+.pr05{
+	padding-right:5px;
+}
+
+.pr10{
+	padding-right:10px;
+}
+
+.pr20{
+	padding-right:20px;
+}
+
+.pb05{
+	padding-bottom:05px;
+}
+
+.pb10{
+	padding-bottom:10px;
+}
+
+.pb20{
+	padding-bottom:20px;
+}
+
+.pl05{
+	padding-left:05px;
+}
+
+.pl10{
+	padding-left:10px;
+}
+
+.pl20{
+	padding-left:20px;
+}
+
+.pl100{
+	padding-left:100px;
+}
+
+.plr50{
+	padding-left:50px;
+	padding-right:50px;
+}
+
+/*--------------------------汎用フロート設定--------------------------*/
+
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+/*--------------------------汎用フロート設定--------------------------*/
+
+.l_txt{
+	text-align:left;
+}
+
+.r_txt{
+	text-align:right;
+}
+
+.c_txt{
+	text-align:center;
+}
+
+.smptxt {
+	text-align:left;
+	margin:0 10px 20px 10px;
+}
+
+/*--------------------------汎用フォント設定--------------------------*/
+
+.bold {
+	font-weight:bold;
+}
+
+.underline {
+	text-decoration:underline;
+}
+
+.important {
+	color:#F24;
+	font-size:16px;
+	font-weight:bold;
+	background:#FF0;
+}
+
+.f_red {
+	color:#FF0000;
+}
+
+.f_orange {
+	color:#f29600;
+}
+
+.f_green {
+	color:#008F42;
+}
+
+.f_gray {
+	color:#666;
+}
+
+.marker {
+	background:#FF0;
+}
+
+.small_txt {
+	font-size:9px;
+}
+
+.fs_150 {
+	font-size:150%;
+}
+
+.fs_125 {
+	font-size:125%;
+}
+
+.fs_90 {
+	font-size:90%;
+}
+
+.fs_80 {
+	font-size:80%;
+}
+
+
+/*--------------------------汎用フォーム設定--------------------------*/
+
+
+
+
+
+/*--------------------------汎用表示設定--------------------------*/
+
+.display {
+	display:block;
+}
+
+.hidden {
+	display:none;
+}
+
+.hover:hover {
+	opacity:0.8;
+	cursor:pointer;
+}
+
+.clearfix:after { 
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#clear_both {
+	clear:both;
+}
+

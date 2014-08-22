@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+
+/* /////////////////////////////////////////////////
+
+	Main CSS
+	
+	Author	yk
+	Date	2013/04/25
+
+///////////////////////////////////////////////// */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+
+/*--------------------------ADMINTOOL ログインページ設定--------------------------*/
+
+@font-face {
+	font-family: "FontAwesome";
+	src: url('../font/fontawesome-webfont.eot');
+	src: url('../font/fontawesome-webfont.eot?#iefix') format('eot'), 
+	url('../font/fontawesome-webfont.woff') format('woff'), 
+	url('../font/fontawesome-webfont.ttf') format('truetype'), 
+	url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body#loginBody{
+	height:640px;
+	background:url(/admin/images/bg_login.png);
+}
+
+#loginWrap{
+	position:absolute;
+	top:30%;
+	width:100%;
+}
+
+#loginBox{
+	position:relative;
+	width:320px;
+	margin:0 auto;
+	background:#DEDEDE;
+	background:rgba(255, 255, 255, 0.75);
+	overflow:hidden;
+}
+
+@media screen and (max-width: 640px){
+	#loginBox{
+		width:320px;
+	}
+}
+
+#loginBox div.message{
+	float:left;
+}
+
+#loginBox div.message h1{
+	width:320px;
+	font-size:24px;
+	font-weight:300;
+	line-height:24px;
+	text-align:center;
+}
+
+#loginBox div.message img{
+	width:100%;
+}
+
+#loginBox form{
+	float:left;
+	width:320px;
+	margin:24px auto;
+}
+
+#loginBox p.field{
+	position:relative;
+	margin-left:24px;
+}
+
+#loginBox input[type=text],
+#loginBox input[type=password] {
+	width: 200px;
+	color: #777;
+	font-size: 13px;
+	font-weight: 400;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+	padding: 8px 18px 8px 45px;
+	margin-bottom:10px;
+	border-radius: 3px;
+	background: #f9f9f9;
+	-webkit-transition: color 0.3s ease-out;
+	-moz-transition: color 0.3s ease-out;
+	-ms-transition: color 0.3s ease-out;
+	-o-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
+	border: none;
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 3px 2px rgba(0,0,0,0.1);
+}
+
+#loginBox span.icon {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	height: 36px;
+	width: 36px;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+	color: #777777;
+	text-align: center;
+	line-height: 42px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	pointer-events: none;
+}
+
+#loginBox span.icon:before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	vertical-align: top;
+	font-size: 1.3333333333333333em;
+}
+
+#loginBox span.user:before {
+	content: "\f007";
+}
+
+#loginBox span.pass:before {
+	content: "\f023";
+}
+
+#loginBox div.loginBtnBox {
+	position:relative;
+	margin-top:6px;
+	margin-left:24px;
+	overflow:hidden;
+}
+
+#loginBox div.loginBtnBox label{
+	float:left;
+	width:163px;
+	color: #777;
+	margin-top:18px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+#loginBox div.loginBtnBox label input{
+	margin-right:6px;
+}
+
+#loginBox p.submitBtn{
+	float:left;
+	width:100px;
+	height: 34px;
+	background: #32707a;
+	background: -moz-linear-gradient(#59C5D6, #306878);
+	background: -ms-linear-gradient(#59C5D6, #306878);
+	background: -o-linear-gradient(#59C5D6, #306878);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#59C5D6), to(#306878));
+	background: -webkit-linear-gradient(#59C5D6, #306878);
+	background: linear-gradient(#59C5D6, #306878);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.35), inset 0 3px 2px rgba(255,255,255,0.2), inset 0 -3px 2px rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+
+#loginBox p.submitBtn button{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#FFF;
+	line-height: 34px;
+	margin:0 auto;
+	border:none;
+	background:none;
+	cursor:pointer;
+}
+
+#loginBox p.submitBtn:hover{
+	background: #52cfeb;
+	background: -moz-linear-gradient(#52cfeb, #42A2BC);
+	background: -ms-linear-gradient(#52cfeb, #42A2BC);
+	background: -o-linear-gradient(#52cfeb, #42A2BC);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#52cfeb), to(#42A2BC));
+	background: -webkit-linear-gradient(#52cfeb, #42A2BC);
+	background: linear-gradient(#52cfeb, #42A2BC);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.35), inset 0 3px 2px rgba(255,255,255,0.2), inset 0 -3px 2px rgba(0,0,0,0.1);
+}
+
+#loginBox p.submitBtn:active{
+    background: #42A2BC;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3), inset 0 3px 4px rgba(0,0,0,0.3);
+}
+
+#loginState{
+	width:640px;
+	height:32px;
+	margin:25px auto;
+}
+
+@media screen and (max-width: 640px){
+	#loginState{
+		width:320px;
+	}
+}
+
+#loginState p{
+	color:#FFF;
+	font-size:13px;
+	text-align:center;
+	line-height:32px;
+	background:#222;
+	background:rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.95);
+	border-radius:5px;
+}
+
+#loginState p.Err{
+	color:#F90;
+}

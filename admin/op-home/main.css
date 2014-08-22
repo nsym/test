@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+
+/* /////////////////////////////////////////////////
+
+	Main CSS
+	
+	Author	yk
+	Date	2013/12/14
+	Author	yk
+	Date	2014/01/08
+
+///////////////////////////////////////////////// */
+
+
+/*--------------------------ホーム　期限切れアラート設定--------------------------*/
+
+#stateMessage p.alert,
+#contents .stateMessage p.alert{
+	color:#fff;
+	border-color:#d12610;
+	background:#d12610;
+}
+
+
+/*--------------------------ホーム　カレンダー設定--------------------------*/
+
+#calendar-wrap{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	background: none repeat scroll 0 0 #fff;
+	border: 1px solid #e0dede;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#calendar-wrap #calTitle{
+	overflow:hidden;
+}
+
+#calendar-wrap #calTitle a.prevBtn{
+	float:left;
+}
+
+#calendar-wrap #calTitle a.nextBtn{
+	float:right;
+}
+
+#calendar-wrap #calTitle p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	text-align:center;
+	margin:10px 0
+}
+
+#calendar-wrap table{
+	width:100%;
+	border-bottom:1px solid #cdcdcd;
+}
+
+#calendar-wrap table thead tr,
+#calendar-wrap table tbody tr{
+	border-width:1px 0 0 1px;
+	border-style:solid;
+	border-color:#cdcdcd;
+}
+
+#calendar-wrap table thead tr{
+	height:20px;
+	background:#fafafa;
+}
+
+#calendar-wrap table thead tr th{
+	width:14%;
+	color:#555;
+	font-size:13px;
+	font-weight:bold;
+	line-height:20px;
+	text-align:center;
+	border-right:1px solid #cdcdcd;
+}
+
+#calendar-wrap table tbody tr td{
+	border-right:1px solid #cdcdcd;
+}
+
+#calendar-wrap table tbody tr td >div{
+	min-height:80px;
+}
+
+#calendar-wrap table tbody tr td span.dayNum{
+	float: right;
+	font-size:12px;
+	padding: 2px 4px;
+}
+
+#calendar-wrap table tbody tr td a.eventLabel{
+	display:block;
+	float:left;
+	width:96%;
+	height:18px;
+	color:#fff;
+	font-size:12px;
+	line-height:18px;
+	margin:1px;
+	background: #888;
+	border-radius:3px;
+	overflow:hidden;
+}
+
+#calendar-wrap table tbody tr td a.eventLabel:hover{
+	background: #0f4e9d;
+}
+
+#calendar-wrap form{
+	padding:20px 0 10px;
+}
+
+#calendar-wrap form fieldset{
+	padding:2px 0;
+	overflow:hidden;
+}
+
+#calendar-wrap form fieldset legend{
+	float:left;
+	width:100px;
+	font-weight:bold;
+	line-height:30px;
+}
+
+#calendar-wrap form fieldset label{
+	display:block;
+	float:left;
+	height:20px;
+	margin:5px 10px 5px 0;
+}
+
+#calendar-wrap form fieldset select{
+	display: inline-block;
+	width:160px;
+	height:30px;
+	vertical-align: middle;
+	margin-bottom: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+#calendar-wrap form fieldset input[type=radio]{
+	margin-right:4px;
+}
+
+#calendar-wrap form fieldset input[type=text]{
+	width:60%;
+	max-width:400px;
+	height:28px;
+	font-size:14px;
+	padding-left:6px;
+	padding-right:6px;
+	border:1px solid #ddd;
+	border-radius:0px;
+	box-shadow:none;
+}
+
+#calendar-wrap form button{
+	width:15%;
+	height:32px;
+	color: #fff;
+	font-size:14px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	vertical-align:middle;
+	border: 1px solid #ccc;
+	background-color: #5bb75b;
+	background-image: -moz-linear-gradient(top,#62c462,#51a351);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#62c462),to(#51a351));
+	background-image: -webkit-linear-gradient(top,#62c462,#51a351);
+	background-image: -o-linear-gradient(top,#62c462,#51a351);
+	background-image: linear-gradient(to bottom,#62c462,#51a351);
+	background-repeat: repeat-x;
+	border-color: #51a351 #51a351 #387038;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462',endColorstr='#ff51a351',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	outline:none;
+	cursor:pointer;
+}
+
+#calendar-wrap form button:hover{
+	color: #fff;
+	text-decoration: none;
+	background-color: #51a351;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+
+
+/*--------------------------ホーム　スケジュール設定--------------------------*/
+
+#schedule-wrap{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	background: none repeat scroll 0 0 #fff;
+	border: 1px solid #e0dede;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#schedule-wrap form{
+	padding:10px 20px;
+}
+
+#schedule-wrap fieldset{
+	border-top:1px solid #fff;
+	border-bottom:1px solid #f5f5f5;
+}
+
+#schedule-wrap fieldset legend{
+	display:block;
+	color:#333;
+	font-size:13px;
+	font-weight:bold;
+	text-align:left;
+	line-height:18px;
+	padding-top:6px;
+}
+
+#schedule-wrap fieldset p{
+	text-indent:20px;
+	margin-bottom:8px;
+}
+
+#schedule-wrap fieldset div{
+	text-indent:20px;
+	margin-bottom:8px;
+}
+
+#schedule-wrap .formAction{
+	text-align:right;
+}
+
+
+/*--------------------------ホーム　メッセージ設定--------------------------*/
+
+#message-wrap{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	background: none repeat scroll 0 0 #fff;
+	border: 1px solid #e0dede;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#messageList{
+	max-height:320px;
+	padding:20px 20px 0;
+	overflow:scroll;
+}
+
+#messageList li{
+	margin:10px auto;
+	overflow:hidden;
+}
+
+#messageList li >div{
+	width:54px;
+	text-align:center;
+}
+
+#messageList li i.avatar{
+	display:block;
+	font-size:36px;
+}
+
+#messageList li p.message{
+	position: relative;
+	min-height:20px;
+	padding: 2px 5px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#messageList li span.staff{
+	color:#888;
+	font-size:10px;
+	line-height:12px;
+}
+
+#messageList li span.datetime{
+	display:block;
+	color:#888;
+	font-size:10px;
+}
+
+#messageList li.reserve >div{
+	float:left;
+}
+
+#messageList li.reserve i.avatar{
+	color:#888;
+}
+
+#messageList li.reserve p.message{
+	margin-left: 54px;
+	background: #fff;
+}
+
+#messageList li.reserve span.arrow{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: -8px;
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid #ddd;
+}
+
+#messageList li.reserve span.datetime{
+	text-align:left;
+	margin-left: 54px;
+}
+
+#messageList li.serve >div{
+	float:right;
+}
+
+#messageList li.serve i.avatar{
+	color:#0f4e9d;
+}
+
+#messageList li.serve p.message{
+	margin-right: 54px;
+	background: #e9eff3;
+}
+
+#messageList li.serve span.arrow{
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: -8px;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #ddd;
+}
+
+#messageList li.serve span.datetime{
+	text-align:right;
+	margin-right: 54px;
+}
+
+#messageForm{
+	padding: 10px;
+	margin:15px 10px 10px;
+	background:#e9eff3;
+}
+
+#messageForm input[type=text]{
+	width:80%;
+	height:28px;
+	font-size:14px;
+	padding-left:6px;
+	padding-right:6px;
+	border:1px solid #ddd;
+	border-radius:0px;
+	box-shadow:none;
+}
+
+#messageForm button{
+	width:15%;
+	height:32px;
+	color: #fff;
+	font-size:14px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	vertical-align:middle;
+	border: 1px solid #ccc;
+	background-color: #5bb75b;
+	background-image: -moz-linear-gradient(top,#62c462,#51a351);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#62c462),to(#51a351));
+	background-image: -webkit-linear-gradient(top,#62c462,#51a351);
+	background-image: -o-linear-gradient(top,#62c462,#51a351);
+	background-image: linear-gradient(to bottom,#62c462,#51a351);
+	background-repeat: repeat-x;
+	border-color: #51a351 #51a351 #387038;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462',endColorstr='#ff51a351',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	outline:none;
+	cursor:pointer;
+}
+
+#messageForm button:hover{
+	color: #fff;
+	text-decoration: none;
+	background-color: #51a351;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+
+
+/*--------------------------ホーム　リストスタイル設定--------------------------*/
+
+#detail-wrap .no_estimate,
+#detail-wrap .no_request{
+	height: 48px;
+	color: #555;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 48px;
+	margin:10px;
+	background:#fafafa;
+}
+
+#detail-wrap table{
+	width:90%;
+	font-size:13px;
+	margin:10px auto 15px;
+}
+
+#detail-wrap table thead tr{
+	height:28px;
+	border-bottom: 1px solid #ddd;
+}
+
+#detail-wrap table thead tr th,
+#detail-wrap table thead tr td{
+	font-weight:bold;
+}
+
+#detail-wrap table tbody tr{
+	border-top:1px solid #fff;
+	border-bottom:1px solid #f5f5f5;
+}
+
+#detail-wrap table tbody tr:hover{
+	background:#fafafa;
+}
+
+#detail-wrap table tbody td{
+	font-size:12px;
+	padding:4px 0;
+}
+
+

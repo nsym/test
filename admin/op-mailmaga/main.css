@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+
+/* /////////////////////////////////////////////////
+
+	Main CSS
+	
+	Author	yk
+	Date	2013/11/05
+
+///////////////////////////////////////////////// */
+
+
+/*--------------------------メルマガ管理　リストスタイル設定--------------------------*/
+
+#list-wrap .listCtrl li {
+	width: 100px;
+}
+
+#list-wrap .no_list{
+	height:48px;
+	color:#555;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:48px;
+}
+
+#list-wrap span.reserving{
+	color: #37b7f3;
+}
+
+#list-wrap span.reserved{
+	color: #fff;
+	padding:1px 3px;
+	background: #37b7f3;
+}
+
+#list-wrap span.sending{
+	color: #fff;
+	padding:1px 8px;
+	background: #1eb701;
+}
+
+#list-wrap span.complete{
+	color: #1eb701;
+}
+
+#list-wrap span.stop{
+	color: #fff;
+	padding:1px 8px;
+	background: #d12610;
+}
+
+
+/*--------------------------メルマガ管理　エディットスタイル設定--------------------------*/
+
+#new-wrap .name input,
+#edit-wrap .name input{
+	width:60px;
+	margin:0 4px;
+}
+
+#new-wrap .telnum input,
+#edit-wrap .telnum input{
+	width:60px;
+	margin:0 4px;
+}
+
+#new-wrap input[name=business],
+#edit-wrap input[name=business],
+#new-wrap input[name=job],
+#edit-wrap input[name=job]{
+	width:200px;
+}
+
+#new-wrap input[name=area_text],
+#edit-wrap input[name=area_text]{
+	width:160px;
+	margin-left:20px;
+}
+
+#new-wrap textarea,
+#edit-wrap textarea{
+	height:200px;
+}
+
+
+/*--------------------------メルマガ管理　リストスタイル設定--------------------------*/
+
+#detail-wrap .addBtn{
+	color:#fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #006dcc;
+	background-image: -moz-linear-gradient(top,#08c,#04c);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));
+	background-image: -webkit-linear-gradient(top,#08c,#04c);
+	background-image: -o-linear-gradient(top,#08c,#04c);
+	background-image: linear-gradient(to bottom,#08c,#04c);
+	background-repeat: repeat-x;
+	border-color: #04c #04c #002a80;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	border-bottom-color: #b3b3b3;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+#detail-wrap .addBtn:hover{
+	color: #fff;
+	background-color: #04c;
+}
+
+#detail-wrap .stopBtn{
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #da4f49;
+	background-image: -moz-linear-gradient(top,#ee5f5b,#bd362f);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ee5f5b),to(#bd362f));
+	background-image: -webkit-linear-gradient(top,#ee5f5b,#bd362f);
+	background-image: -o-linear-gradient(top,#ee5f5b,#bd362f);
+	background-image: linear-gradient(to bottom,#ee5f5b,#bd362f);
+	background-repeat: repeat-x;
+	border-color: #bd362f #bd362f #802420;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b',endColorstr='#ffbd362f',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+#detail-wrap .stopBtn:hover{
+	color: #fff;
+	background-color: #bd362f;
+}
+
+#detail-wrap fieldset.text{
+}
+
+#detail-wrap fieldset.text p{
+	max-height:200px;
+	text-indent:0px !important;
+	padding-left:20px;
+	overflow:scroll;
+}
+
+
+

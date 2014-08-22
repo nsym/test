@@ -1,0 +1,22 @@
+Return-Path: <yokoe@side7.co.jp>
+X-Original-To: yokoe@72web.co.jp
+Delivered-To: yokoe@72web.co.jp
+Received: from localhost.localdomain (localhost.localdomain [127.0.0.1])
+	by m030100041.mediawars.net (Postfix) with ESMTP id 6D74C3290011
+	for <yokoe@72web.co.jp>; Thu, 19 Dec 2013 09:45:18 +0900 (JST)
+Received: by macheker
+Received: from [192.168.1.12] (p5073-ipngn100201otsu.shiga.ocn.ne.jp
+ [180.27.104.73])	by m030100041.mediawars.net (Postfix) with ESMTP id
+ 4CC5B329000F	for <yokoe@72web.co.jp>; Thu, 19 Dec 2013 09:45:18 +0900
+ (JST)
+From: =?iso-2022-jp?B?GyRCJUolRCUmJSclViEhJWglMyUoGyhC?= <yokoe@side7.co.jp>
+Content-Type: text/plain; charset=iso-2022-jp
+Content-Transfer-Encoding: 7bit
+Date: Thu, 19 Dec 2013 09:45:18 +0900
+Subject: =?iso-2022-jp?B?GyRCQlAxfk16TnIlYSE8JWslRiU5JUg3b0w+GyhC?=
+To: 72web@i.softbank.jp
+Message-ID: <B91089CD-9440-4D64-8CD4-3CC62B60A0BD@side7.co.jp>
+MIME-Version: 1.0 (Apple Message framework v1257)
+X-Mailer: Apple Mail (2.1257)
+
+テスト

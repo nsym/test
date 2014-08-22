@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+
+/* /////////////////////////////////////////////////
+
+	Main CSS
+	
+	Author	yk
+	Date	2013/12/13
+	Author	yk
+	Date	2014/01/10
+
+///////////////////////////////////////////////// */
+
+
+/*--------------------------受注管理　リストスタイル設定--------------------------*/
+
+#list-wrap .headText{
+	margin-bottom:10px;
+}
+
+#list-wrap .headText h4{
+	display:inline-block;
+	float:left;
+	margin-bottom:0;
+}
+
+#list-wrap .headText button[name=searchBtn]{
+	display: inline-block;
+	padding: 4px 12px;
+	margin-left:20px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+	vertical-align: top;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+	background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+	background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #ccc;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+
+#list-wrap .headText button[name=searchBtn]:hover{
+	color: #333;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+
+/*-- 期間絞り込み追加によるスタイル　2014.01.10yk --*/
+#list-wrap #searchWrap{
+	margin-bottom:20px;
+	background-color: #fafafa;
+	border-top: 1px solid #ccc;
+}
+
+#list-wrap #searchWrap form{
+	display:none;
+	padding:10px;
+	border-bottom:1px solid #ccc;
+}
+
+#list-wrap #searchWrap fieldset{
+	padding:10px 20px;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #f5f5f5;
+}
+
+#list-wrap #searchWrap fieldset legend{
+	display:block;
+	float:left;
+	width:160px;
+	color:#333;
+	font-size:13px;
+	text-align:right;
+	line-height:18px;
+	padding-top:6px;
+	margin-bottom:2px;
+}
+
+#list-wrap #searchWrap fieldset >div{
+	margin-left:180px;
+}
+
+
+#list-wrap #searchWrap fieldset label{
+	display:inline-block;
+	color:#666;
+	padding:4px 24px 4px 4px;
+	margin-right:6px;
+	margin-bottom:4px;
+	border:1px solid #ddd;
+	cursor:pointer;
+}
+
+#list-wrap #searchWrap input[type=radio]{
+	margin-right:4px;
+}
+
+#list-wrap #searchWrap input[type=text]{
+	width:60px;
+	max-width:400px;
+	height:28px;
+	font-size:14px;
+	padding-left:6px;
+	padding-right:6px;
+	margin-left:8px;
+	border:1px solid #ddd;
+	border-radius:0px;
+	box-shadow:none;
+}
+
+#list-wrap #searchWrap select{
+	display: inline-block;
+	width:120px;
+	height:30px;
+	vertical-align: middle;
+	margin-bottom: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+#list-wrap #searchWrap .date select{
+	width:80px;
+	margin-left:8px;
+	margin-right:4px;
+}
+
+#list-wrap #searchWrap .searchAction{
+	padding: 14px 10px 15px 172px;
+}
+
+#list-wrap #searchWrap .searchAction button{
+	display: inline-block;
+	padding: 4px 12px;
+	margin-left:20px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #006dcc;
+	background-image: -moz-linear-gradient(top,#08c,#04c);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));
+	background-image: -webkit-linear-gradient(top,#08c,#04c);
+	background-image: -o-linear-gradient(top,#08c,#04c);
+	background-image: linear-gradient(to bottom,#08c,#04c);
+	background-repeat: repeat-x;
+	border: 1px solid #ccc;
+	border-color: #04c #04c #002a80;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+/*-- ここまで --*/
+
+#list-wrap .headText .staffSelect{
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+	white-space: nowrap;
+	vertical-align: middle;
+	margin-left:10px;
+}
+
+#list-wrap .headText .staffSelect button{
+	display: inline-block;
+	padding: 4px 8px;
+	margin-left:20px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+	background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+	background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #ccc;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+
+#list-wrap .headText button.btn{
+	position: relative;
+	margin:0px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+#list-wrap .headText button.dropdown{
+	position: relative;
+	margin:0px;
+	margin-left:-1px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+}
+
+#list-wrap .headText button.dropdown:hover{
+	color: #333;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+
+#list-wrap .headText ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	font-size: 12px;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 4px;
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	background-clip: padding-box;
+}
+
+#list-wrap .headText ul li >a{
+	display: block;
+	clear: both;
+	color: #333;
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 18px;
+	white-space: nowrap;
+	padding: 6px 0 6px 13px;
+}
+
+#list-wrap .headText ul li >a:hover{
+	background:#eee;
+}
+
+#list-wrap .headText .searchText{
+	display:inline-block;
+	color: #d12610;
+	font-size:14px;
+	font-weight:bold;
+	line-height:30px;
+	vertical-align: text-top;
+	margin-left:20px;
+}
+
+#list-wrap .listCtrl li {
+	width: 100px;
+}
+
+#list-wrap table td input[type=checkbox]{
+	margin:0 8px;
+}
+
+
+/*--------------------------受注管理　エディットスタイル設定--------------------------*/
+
+#new-wrap input[name=cliant_id],
+#edit-wrap input[name=cliant_id]{
+	width:60px;
+}
+
+#new-wrap input[name=price],
+#edit-wrap input[name=price]{
+	width:120px;
+}
+
+#edit-wrap a.previewLink{
+	color:#fff;
+	padding:4px 14px;
+	margin-right:10px;
+	background:#37b7f3;
+}
+
+#edit-wrap p.cliantText{
+	font-size:14px;
+	font-weight:bold;
+	line-height:20px;
+	padding-left:20px;
+}
+
+
+/*--------------------------受注管理　詳細スタイル設定--------------------------*/
+
+#detail-wrap form{
+	padding-top:0px !important;
+}
+
+
+/*--------------------------受注管理　顧客ID検索スタイル設定--------------------------*/
+
+#detail-wrap #searchCliant{
+	margin:15px auto 0;
+}
+
+#detail-wrap .no_keyword{
+	height: 48px;
+	color: #555;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 48px;
+	margin:10px;
+	background:#fafafa;
+}
+
+#detail-wrap table{
+	width:90%;
+	font-size:13px;
+	margin:10px auto 15px;
+}
+
+#detail-wrap table thead tr{
+	height:28px;
+	border-bottom: 1px solid #ddd;
+}
+
+#detail-wrap table thead tr th,
+#detail-wrap table thead tr td{
+	font-weight:bold;
+}
+
+#detail-wrap table tbody tr{
+	border-top:1px solid #fff;
+	border-bottom:1px solid #f5f5f5;
+}
+
+#detail-wrap table tbody tr:hover{
+	background:#fafafa;
+}
+
+#detail-wrap table tbody td{
+	font-size:12px;
+	padding:4px 0;
+}
+
+#detail-wrap table tbody th.no_list{
+	height:48px;
+	color:#555;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:48px;
+}
+
+#detail-wrap table tbody td a{
+	margin:8px 4px;
+}
+
+
+
+
