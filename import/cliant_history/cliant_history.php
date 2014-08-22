@@ -24,11 +24,13 @@
 			}
 			//print_r($staff_data);
 			//対応履歴のフィールド挿入
-			$res = updateCliantRecentHistoryForID($value["ID"], $recent_history["HISTORY_DATE"], $staff_name);
+			//$res = updateCliantRecentHistoryForID($value["ID"], $recent_history["HISTORY_DATE"], $staff_name);
 		}
 		//失敗したら停止
 		if(!$res) break;
 	}
+	
+	echo count($cliant_list).'件の対応履歴インポート完了';
 	
 	
 		
